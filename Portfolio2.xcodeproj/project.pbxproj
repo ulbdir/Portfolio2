@@ -7,18 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43188B7F288EF4C7005C047A /* SwiftPieChart in Frameworks */ = {isa = PBXBuildFile; productRef = 43188B7E288EF4C7005C047A /* SwiftPieChart */; };
+		43575DE32884981900AFF41B /* DecimalInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43575DE22884981900AFF41B /* DecimalInput.swift */; };
+		43575DE52884A13400AFF41B /* CurrencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43575DE42884A13400AFF41B /* CurrencyPicker.swift */; };
+		436EAFC0288AF59600BDCC55 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EAFBF288AF59600BDCC55 /* PortfolioView.swift */; };
+		436EAFC2288AF6CA00BDCC55 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EAFC1288AF6CA00BDCC55 /* TransactionListView.swift */; };
+		43E8E4002881B91D00F2640C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E3FF2881B91D00F2640C /* Model.swift */; };
+		43E8E4032881BA7700F2640C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E4022881BA7700F2640C /* Currency.swift */; };
+		43E8E4052881BA9F00F2640C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E4042881BA9F00F2640C /* Settings.swift */; };
+		43E8E4072881BAE200F2640C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E4062881BAE200F2640C /* Transaction.swift */; };
+		43E8E4092881BCAD00F2640C /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E4082881BCAD00F2640C /* Asset.swift */; };
+		43E8E40B2882DE5600F2640C /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E40A2882DE5600F2640C /* TransactionDetailView.swift */; };
 		43EB12D0287F476500ED57C2 /* Portfolio2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB12CF287F476500ED57C2 /* Portfolio2App.swift */; };
 		43EB12D2287F476500ED57C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB12D1287F476500ED57C2 /* ContentView.swift */; };
 		43EB12D4287F476A00ED57C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EB12D3287F476A00ED57C2 /* Assets.xcassets */; };
 		43EB12D7287F476A00ED57C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EB12D6287F476A00ED57C2 /* Preview Assets.xcassets */; };
+		43EB12DE28809B0D00ED57C2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB12DD28809B0D00ED57C2 /* SettingsView.swift */; };
+		43F3E05A288834650056DDAF /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3E059288834650056DDAF /* TransactionCardView.swift */; };
+		43F3E05C2888385D0056DDAF /* PreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3E05B2888385D0056DDAF /* PreviewModel.swift */; };
+		43F3E05E288989FE0056DDAF /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3E05D288989FE0056DDAF /* Position.swift */; };
+		43F3E0602889E27F0056DDAF /* PositionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3E05F2889E27F0056DDAF /* PositionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43575DE22884981900AFF41B /* DecimalInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalInput.swift; sourceTree = "<group>"; };
+		43575DE42884A13400AFF41B /* CurrencyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPicker.swift; sourceTree = "<group>"; };
+		436EAFBF288AF59600BDCC55 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		436EAFC1288AF6CA00BDCC55 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		43E8E3FF2881B91D00F2640C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		43E8E4022881BA7700F2640C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		43E8E4042881BA9F00F2640C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		43E8E4062881BAE200F2640C /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		43E8E4082881BCAD00F2640C /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		43E8E40A2882DE5600F2640C /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
 		43EB12CC287F476500ED57C2 /* Portfolio2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EB12CF287F476500ED57C2 /* Portfolio2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio2App.swift; sourceTree = "<group>"; };
 		43EB12D1287F476500ED57C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43EB12D3287F476A00ED57C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43EB12D6287F476A00ED57C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43EB12DD28809B0D00ED57C2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		43F3E059288834650056DDAF /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		43F3E05B2888385D0056DDAF /* PreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModel.swift; sourceTree = "<group>"; };
+		43F3E05D288989FE0056DDAF /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		43F3E05F2889E27F0056DDAF /* PositionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43188B7F288EF4C7005C047A /* SwiftPieChart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43E8E4012881BA6400F2640C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				43E8E3FF2881B91D00F2640C /* Model.swift */,
+				43E8E4022881BA7700F2640C /* Currency.swift */,
+				43E8E4042881BA9F00F2640C /* Settings.swift */,
+				43E8E4062881BAE200F2640C /* Transaction.swift */,
+				43E8E4082881BCAD00F2640C /* Asset.swift */,
+				43575DE22884981900AFF41B /* DecimalInput.swift */,
+				43575DE42884A13400AFF41B /* CurrencyPicker.swift */,
+				43F3E05D288989FE0056DDAF /* Position.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		43EB12C3287F476400ED57C2 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +98,17 @@
 		43EB12CE287F476500ED57C2 /* Portfolio2 */ = {
 			isa = PBXGroup;
 			children = (
+				43E8E4012881BA6400F2640C /* model */,
 				43EB12CF287F476500ED57C2 /* Portfolio2App.swift */,
 				43EB12D1287F476500ED57C2 /* ContentView.swift */,
+				43E8E40A2882DE5600F2640C /* TransactionDetailView.swift */,
+				43EB12DD28809B0D00ED57C2 /* SettingsView.swift */,
 				43EB12D3287F476A00ED57C2 /* Assets.xcassets */,
 				43EB12D5287F476A00ED57C2 /* Preview Content */,
+				43F3E059288834650056DDAF /* TransactionCardView.swift */,
+				43F3E05F2889E27F0056DDAF /* PositionList.swift */,
+				436EAFBF288AF59600BDCC55 /* PortfolioView.swift */,
+				436EAFC1288AF6CA00BDCC55 /* TransactionListView.swift */,
 			);
 			path = Portfolio2;
 			sourceTree = "<group>";
@@ -63,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				43EB12D6287F476A00ED57C2 /* Preview Assets.xcassets */,
+				43F3E05B2888385D0056DDAF /* PreviewModel.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -83,6 +138,9 @@
 			dependencies = (
 			);
 			name = Portfolio2;
+			packageProductDependencies = (
+				43188B7E288EF4C7005C047A /* SwiftPieChart */,
+			);
 			productName = Portfolio2;
 			productReference = 43EB12CC287F476500ED57C2 /* Portfolio2.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +169,9 @@
 				Base,
 			);
 			mainGroup = 43EB12C3287F476400ED57C2;
+			packageReferences = (
+				43188B7D288EF4C7005C047A /* XCRemoteSwiftPackageReference "SwiftPieChart" */,
+			);
 			productRefGroup = 43EB12CD287F476500ED57C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +198,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F3E05E288989FE0056DDAF /* Position.swift in Sources */,
+				43575DE32884981900AFF41B /* DecimalInput.swift in Sources */,
+				43E8E4072881BAE200F2640C /* Transaction.swift in Sources */,
+				43E8E4052881BA9F00F2640C /* Settings.swift in Sources */,
+				43EB12DE28809B0D00ED57C2 /* SettingsView.swift in Sources */,
+				43E8E4032881BA7700F2640C /* Currency.swift in Sources */,
+				43575DE52884A13400AFF41B /* CurrencyPicker.swift in Sources */,
+				436EAFC0288AF59600BDCC55 /* PortfolioView.swift in Sources */,
+				43F3E0602889E27F0056DDAF /* PositionList.swift in Sources */,
 				43EB12D2287F476500ED57C2 /* ContentView.swift in Sources */,
+				436EAFC2288AF6CA00BDCC55 /* TransactionListView.swift in Sources */,
 				43EB12D0287F476500ED57C2 /* Portfolio2App.swift in Sources */,
+				43E8E4092881BCAD00F2640C /* Asset.swift in Sources */,
+				43E8E4002881B91D00F2640C /* Model.swift in Sources */,
+				43F3E05A288834650056DDAF /* TransactionCardView.swift in Sources */,
+				43F3E05C2888385D0056DDAF /* PreviewModel.swift in Sources */,
+				43E8E40B2882DE5600F2640C /* TransactionDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43188B7D288EF4C7005C047A /* XCRemoteSwiftPackageReference "SwiftPieChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ilamanov/SwiftPieChart";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43188B7E288EF4C7005C047A /* SwiftPieChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43188B7D288EF4C7005C047A /* XCRemoteSwiftPackageReference "SwiftPieChart" */;
+			productName = SwiftPieChart;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43EB12C4287F476400ED57C2 /* Project object */;
 }
