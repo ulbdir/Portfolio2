@@ -25,7 +25,11 @@ struct TransactionListView: View {
                 } ) {
                     TransactionCardView(idx: model.transactions.firstIndex(of: tx)!)
                 }.buttonStyle(.plain)
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets(top: 3, leading: 0, bottom: 3, trailing: 0))
+                    .listRowBackground(Color.clear)
             }
+            
             .navigationTitle("Transactions")
             .navigationBarItems(trailing: Button(action: {
                 newTx = Transaction()

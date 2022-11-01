@@ -13,36 +13,26 @@ struct TransactionCardView: View {
     let idx: Int
     
     var body: some View {
-        VStack {
-            HStack {
-                Text(model.transactions[idx].date.formatted()).font(.callout)
-                Spacer()
-                Text(model.transactions[idx].source).font(.callout)
-            }
-            HStack {
-                Spacer()
-                Text(model.transactions[idx].type.rawValue).font(.callout)
-                    .background(
-                        model.transactions[idx].type == .Sell ? Color(UIColor(red: 1, green: 0, blue: 0, alpha: 0.2)) :
-                            model.transactions[idx].type == .Buy ? Color(UIColor(red: 0, green: 1, blue: 0, alpha: 0.2)) :
-                            Color(UIColor(red: 0, green: 0, blue: 1, alpha: 0.2))
-                        , in: RoundedRectangle(cornerRadius: 4))
-                Text(model.transactions[idx].amount.formatted()).font(.callout).bold()
-                Text(model.transactions[idx].asset.name).font(.callout)
-                Text("@").font(.callout)
-                Text(model.transactions[idx].pricePerAsset.formatted()).font(.callout).bold()
-                Text(model.transactions[idx].currency.name).font(.callout)
-            }
-            HStack {
-                Spacer()
-                Text("Cost").font(.callout)
-                Text((model.transactions[idx].amount*model.transactions[idx].pricePerAsset).formatted()).font(.callout)
-                Text(model.transactions[idx].currency.name).font(.callout)
-                Text("+12.04").font(.callout)
-                Text("+3.54%").font(.callout)
-            }
-        }
-        
+        Group {
+            VStack {
+                HStack {
+                    Text(model.transactions[idx].date.formatted()).font(.caption)
+                    Spacer()
+                    Text(model.transactions[idx].source).font(.caption)
+                }.padding(EdgeInsets(top: 0, leading: 0, bottom: 1, trailing: 0))
+                HStack {
+                    Text(model.transactions[idx].type.rawValue).font(.callout)
+                    Text(model.transactions[idx].amount.formatted()).font(.callout)
+                    Text(model.transactions[idx].asset.name).font(.callout)
+                    Spacer()
+                    Text(model.transactions[idx].pricePerAsset.formatted()).font(.callout)
+                    Text(model.transactions[idx].currency.name).font(.callout)
+                }
+            }.padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+        }.background(model.transactions[idx].type == .Sell ? Color(UIColor(red: 1, green: 0, blue: 0, alpha: 0.2)) :
+                        model.transactions[idx].type == .Buy ? Color(UIColor(red: 0, green: 1, blue: 0, alpha: 0.2)) :
+                        Color(UIColor(red: 0, green: 0, blue: 1, alpha: 0.2)))
+        .cornerRadius(15)
     }
 }
 
@@ -52,6 +42,6 @@ struct TransactionList_Previews: PreviewProvider {
     @StateObject static var model: Model = PreviewModel.get()
     
     static var previews: some View {
-        TransactionCardView(idx: 0)
+        TransactionCardView(idx: 0).environmentObject(model)
     }
 }
