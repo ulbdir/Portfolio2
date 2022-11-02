@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430647512912B7B80090FDD6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430647502912B7B80090FDD6 /* Colors.swift */; };
 		43188B7F288EF4C7005C047A /* SwiftPieChart in Frameworks */ = {isa = PBXBuildFile; productRef = 43188B7E288EF4C7005C047A /* SwiftPieChart */; };
 		43575DE32884981900AFF41B /* DecimalInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43575DE22884981900AFF41B /* DecimalInput.swift */; };
 		43575DE52884A13400AFF41B /* CurrencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43575DE42884A13400AFF41B /* CurrencyPicker.swift */; };
 		436EAFC0288AF59600BDCC55 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EAFBF288AF59600BDCC55 /* PortfolioView.swift */; };
 		436EAFC2288AF6CA00BDCC55 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EAFC1288AF6CA00BDCC55 /* TransactionListView.swift */; };
+		439FA56E2911841F00368869 /* TransactionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439FA56D2911841F00368869 /* TransactionGroup.swift */; };
 		43E8E4002881B91D00F2640C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E3FF2881B91D00F2640C /* Model.swift */; };
 		43E8E4032881BA7700F2640C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E4022881BA7700F2640C /* Currency.swift */; };
 		43E8E4052881BA9F00F2640C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E4042881BA9F00F2640C /* Settings.swift */; };
@@ -30,10 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430647502912B7B80090FDD6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		43575DE22884981900AFF41B /* DecimalInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalInput.swift; sourceTree = "<group>"; };
 		43575DE42884A13400AFF41B /* CurrencyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPicker.swift; sourceTree = "<group>"; };
 		436EAFBF288AF59600BDCC55 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		436EAFC1288AF6CA00BDCC55 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		439FA56D2911841F00368869 /* TransactionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionGroup.swift; sourceTree = "<group>"; };
 		43E8E3FF2881B91D00F2640C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		43E8E4022881BA7700F2640C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		43E8E4042881BA9F00F2640C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				43575DE22884981900AFF41B /* DecimalInput.swift */,
 				43575DE42884A13400AFF41B /* CurrencyPicker.swift */,
 				43F3E05D288989FE0056DDAF /* Position.swift */,
+				439FA56D2911841F00368869 /* TransactionGroup.swift */,
+				430647502912B7B80090FDD6 /* Colors.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				43575DE32884981900AFF41B /* DecimalInput.swift in Sources */,
 				43E8E4072881BAE200F2640C /* Transaction.swift in Sources */,
 				43E8E4052881BA9F00F2640C /* Settings.swift in Sources */,
+				439FA56E2911841F00368869 /* TransactionGroup.swift in Sources */,
 				43EB12DE28809B0D00ED57C2 /* SettingsView.swift in Sources */,
 				43E8E4032881BA7700F2640C /* Currency.swift in Sources */,
 				43575DE52884A13400AFF41B /* CurrencyPicker.swift in Sources */,
@@ -209,6 +216,7 @@
 				43F3E0602889E27F0056DDAF /* PositionList.swift in Sources */,
 				43EB12D2287F476500ED57C2 /* ContentView.swift in Sources */,
 				436EAFC2288AF6CA00BDCC55 /* TransactionListView.swift in Sources */,
+				430647512912B7B80090FDD6 /* Colors.swift in Sources */,
 				43EB12D0287F476500ED57C2 /* Portfolio2App.swift in Sources */,
 				43E8E4092881BCAD00F2640C /* Asset.swift in Sources */,
 				43E8E4002881B91D00F2640C /* Model.swift in Sources */,

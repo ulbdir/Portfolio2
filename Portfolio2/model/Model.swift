@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class Model: ObservableObject {
     @Published var settings: Settings = Settings()
@@ -19,10 +20,12 @@ class Model: ObservableObject {
             }
             
             self.positions = Position.computeFromTransactions(transactions: self.transactions)
+            
+            self.transactionGroups = TransactionGroup.computeTransactionGroups(transactions: self.transactions, groupBy: .Week)
         }
     }
     
+    @Published var transactionGroups: [TransactionGroup] = []
     @Published var positions: [Position] = []
-
 }
 

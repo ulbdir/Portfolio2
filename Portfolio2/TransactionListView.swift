@@ -13,23 +13,39 @@ struct TransactionListView: View {
     @State var showSheetView = false
     @State var newTx: Transaction = Transaction()
     
+    private func backgroundColor(tx: Transaction) -> Color {
+        switch (tx.type) {
+        case .Buy:
+            return Color.buyColor
+        case .Sell:
+            return Color.sellColor
+        case .Deposit:
+            return Color.depositColor
+        case .Withdraw:
+            return Color.withdrawColor
+        }
+    }
+    
     var body: some View {
         NavigationStack {
-            List(model.transactions.sorted(by: { a, b in
-                a.date > b.date
-            })) { tx in
-                Button(action: {
-                        newTx = tx
-                        showSheetView = true
-                        
-                } ) {
-                    TransactionCardView(idx: model.transactions.firstIndex(of: tx)!)
-                }.buttonStyle(.plain)
-                    .listRowSeparator(.hidden)
-                    .listRowInsets(EdgeInsets(top: 3, leading: 0, bottom: 3, trailing: 0))
-                    .listRowBackground(Color.clear)
-            }
             
+            List {
+                ForEach(model.transactionGroups) { section in
+                    Section(header: Text(section.title)) {
+                        ForEach(section.transactions) { tx in
+                            Button(action: {
+                                    newTx = tx
+                                    showSheetView = true
+                                    
+                            }, label: {
+                                TransactionCardView(idx: model.transactions.firstIndex(of: tx)!)
+                            })
+                            .listRowBackground(backgroundColor(tx: tx))
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+            }.listStyle(.grouped)
             .navigationTitle("Transactions")
             .navigationBarItems(trailing: Button(action: {
                 newTx = Transaction()
